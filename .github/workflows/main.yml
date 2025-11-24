@@ -35,7 +35,7 @@ jobs:
 
 
   deploydev:
-    needs: tagversion  # <-- Ensure deploydev starts only after tagversion
+    needs: build # <-- Ensure deploydev starts only after tagversion
     runs-on: ubuntu-latest
     environment: dev
     steps:
